@@ -13,13 +13,16 @@ public class Menu {
 
 	private String 	url;
 
+	private Integer level;
+
 	private Integer parentId;
 
-	public Menu(Integer menuId, String name, String url, Integer parentId) {
+	public Menu(Integer menuId, String name, String url, Integer level, Integer parentId) {
 		super();
 		this.menuId = menuId;
 		this.name = name;
 		this.url = url;
+		this.level = level;
 		this.parentId = parentId;
 	}
 }

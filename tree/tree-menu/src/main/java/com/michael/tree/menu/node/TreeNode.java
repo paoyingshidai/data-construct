@@ -14,6 +14,10 @@ public class TreeNode<T> {
 
 	private T node;
 
-	private List<T> children = new ArrayList<>();
+	private List<TreeNode<T>> children = new ArrayList<>();
+
+	public TreeNode(T node) {
+		this.node = node;
+	}
 
 }
