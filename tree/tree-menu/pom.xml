@@ -2,13 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.michael</groupId>
-    <artifactId>data-construce</artifactId>
+    <artifactId>tree</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>tree</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>tree-normal</module>
-  	<module>tree-menu</module>
-  </modules>
+  <artifactId>tree-menu</artifactId>
+
+  <dependencies>
+  	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+  </dependencies>
 </project>
