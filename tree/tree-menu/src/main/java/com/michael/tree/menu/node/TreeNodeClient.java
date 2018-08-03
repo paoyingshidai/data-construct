@@ -26,6 +26,9 @@ public class TreeNodeClient {
 		for(TreeNode<Menu> menu : menus.getChildren()) {
 			bootNode.add(getNode(menu));
 		}
+		if (bootNode.size() == 0) {
+			bootNode = null;
+		}
 		Menu m = menus.getNode();
 		BootstrapTreeNode node = new BootstrapTreeNode(m.getMenuId(), m.getName(), m.getUrl(), bootNode);
 		return node;
